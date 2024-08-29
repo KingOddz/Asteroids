@@ -39,7 +39,7 @@ def main():
         for sht in shots:
             for ast in asteroids:
                 if ast.isColliding(sht):
-                    ast.kill()
+                    ast.split()
                     sht.kill()
 
         for obj in asteroids:
